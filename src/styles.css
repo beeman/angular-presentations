@@ -1,0 +1,21 @@
+@import "~bootswatch/dist/cosmo/bootstrap.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css");
+
+.vh-75 {
+  height: 75vh!important;
+}
+.slide h1 {
+  font-weight: bold;
+}
+.slide h2 {
+  font-weight: lighter;
+}
+.slide ul {
+  font-size: 24px;
+}
+.slide ul li {
+  margin: 20px 0;
+}
+.slide pre {
+  font-size: 24px;
+}
