@@ -61,10 +61,10 @@ export class PresentationComponent implements OnInit {
       .fromEvent(document, 'keyup')
       .map(res => res['key'])
       .subscribe((key) => {
-        if (key === 'ArrowRight') {
+        if (key === 'ArrowRight' || key === 'ArrowDown') {
           this.goNext()
         }
-        if (key === 'ArrowLeft') {
+        if (key === 'ArrowLeft' || key === 'ArrowUp') {
           this.goPrevious()
         }
       })

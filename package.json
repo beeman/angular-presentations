@@ -22,7 +22,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-    "angular-prism": "^0.1.20",
+    "@sgbj/angular-prism": "^0.2.0",
     "bootswatch": "^4.0.0",
     "core-js": "^2.4.1",
     "prismjs": "^1.11.0",

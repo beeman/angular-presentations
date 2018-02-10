@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router'
-import { PrismComponent } from 'angular-prism/dist/src/prism.component'
+import { PrismModule } from '@sgbj/angular-prism'
 import { PresentationComponent } from './container/presentation/presentation.component';
 import { SlidesService } from './services/slides.service';
 import { SlideComponent } from './components/slide/slide.component';
@@ -13,6 +13,12 @@ import { SlideHtmlComponent } from './components/slide-html/slide-html.component
 import { AbstractSlideComponent } from './components/abstract-slide/abstract-slide.component';
 import { SlideYoutubeComponent } from './components/slide-youtube/slide-youtube.component'
 
+import 'prismjs/prism';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-typescript';
+import 'prismjs/components/prism-scss';
+import 'prismjs/components/prism-markup';
+
 const routes: Routes = [
   { path: '', component: PresentationComponent },
   { path: ':slideId', component: PresentationComponent },
@@ -22,9 +28,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    PrismModule,
   ],
   declarations: [
-    PrismComponent,
     PresentationComponent,
     SlideComponent,
     SlideListComponent,

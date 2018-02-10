@@ -5,9 +5,8 @@ import { AbstractSlideComponent } from '../abstract-slide/abstract-slide.compone
   selector: 'app-slide-code',
   template: `
     <app-abstract-slide [content]="content">
-      <prism-block [code]="content.code" [language]="content.language"></prism-block>
+      <prism *ngIf="content.code && content.language" [code]="content.code" [language]="content.language"></prism>
     </app-abstract-slide>
   `,
-  styles: []
 })
 export class SlideCodeComponent extends AbstractSlideComponent {}
