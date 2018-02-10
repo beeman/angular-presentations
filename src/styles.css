@@ -1,5 +1,5 @@
 @import "~bootswatch/dist/cosmo/bootstrap.css";
-@import url("https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css");
+@import "~prismjs/themes/prism-okaidia.css";
 
 .vh-75 {
   height: 75vh!important;
